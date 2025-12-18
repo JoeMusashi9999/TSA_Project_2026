@@ -1,106 +1,130 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Community Hub | TSA Webmaster</title>
-
-  <!-- Embedded CSS -->
-  <style>
-    /* General page settings */
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: #f5f7fa;
-      color: #222;
-      line-height: 1.6;
-    }
-
-    /* Headings */
-    h1 {
-      color: #0b3c5d;
-      text-align: center;
-      margin-bottom: 10px;
-    }
-
-    h2 {
-      color: #0b3c5d;
-      border-bottom: 2px solid #0b3c5d;
-      padding-bottom: 5px;
-      margin-top: 30px;
-    }
-
-    /* Paragraphs */
-    p {
-      max-width: 700px;
-      margin: 10px auto 20px auto;
-      text-align: center;
-    }
-
-    /* Lists */
-    ul {
-      max-width: 700px;
-      margin: 0 auto 20px auto;
-      padding-left: 20px;
-    }
-
-    li {
-      margin-bottom: 10px;
-    }
-
-    /* Links */
-    a {
-      color: #0b3c5d;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    /* Responsive layout */
-    @media (max-width: 600px) {
-      body {
-        padding: 10px;
-      }
-
-      ul, p {
-        width: 100%;
-      }
-    }
-  </style>
+  <meta name="description" content="Community Hub — resources, organizations, and events that help students and community members get involved in STEM and community engagement." />
+  <!-- Open Graph -->
+  <meta property="og:title" content="Community Hub | TSA Webmaster" />
+  <meta property="og:description" content="Resources, organizations, and events for students and community members." />
+  <meta property="og:type" content="website" />
+  <!-- Favicon (add your favicon file at /favicon.ico) -->
+  <link rel="icon" href="/favicon.ico" />
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- External stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Community Hub</a>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="main-nav">Menu</button>
+      <nav id="main-nav" class="main-nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#resources">Resources</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <h1>Community Hub</h1>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h1>Welcome to the Community Hub</h1>
+        <p class="lead">Find local resources, educational materials, and volunteer opportunities to help students and community members engage with STEM and local programs.</p>
+        <p><a class="btn" href="#resources">Explore Resources</a></p>
+      </div>
+    </section>
 
-  <p>
-    Welcome to the Community Hub! This page provides resources, organizations, and events
-    that help students and community members get involved and learn more about STEM education and community engagement.
-  </p>
+    <section id="resources" class="section container">
+      <h2>Local Community Resources</h2>
+      <p class="section-intro">Organizations and services in the area that support youth, families, and community involvement.</p>
 
-  <h2>Local Community Resources</h2>
-  <ul>
-    <li>Mercer Island Youth & Family Services – Offers programs that support youth development and family engagement.</li>
-    <li>City of Mercer Island – Provides community programs, volunteering opportunities, and local events.</li>
-    <li>Local Library – Hosts educational workshops and STEM activities for students of all ages.</li>
-  </ul>
+      <div class="grid">
+        <article class="card">
+          <h3>Mercer Island Youth & Family Services</h3>
+          <p>Offers programs that support youth development and family engagement, counseling, and after-school activities.</p>
+          <p><a class="card-link" href="#">Learn more</a></p>
+        </article>
 
-  <h2>Educational Resources</h2>
-  <ul>
-    <li>Student Leadership Toolkit – Guides students on how to take leadership roles and contribute to the community.</li>
-    <li>Community Engagement Guide – Provides tips and strategies for getting involved in local initiatives.</li>
-  </ul>
+        <article class="card">
+          <h3>City of Mercer Island</h3>
+          <p>Provides community programs, volunteering opportunities, and local events for residents and students.</p>
+          <p><a class="card-link" href="#">City programs</a></p>
+        </article>
 
-  <h2>Events & Opportunities</h2>
-  <ul>
-    <li>Community Volunteer Day – A city-wide volunteer event open to students and families.</li>
-    <li>Youth Leadership Workshop – Learn leadership and teamwork skills through hands-on activities.</li>
-  </ul>
+        <article class="card">
+          <h3>Local Library</h3>
+          <p>Hosts workshops, STEM activities, and reading clubs for students of all ages.</p>
+          <p><a class="card-link" href="#">Library events</a></p>
+        </article>
+      </div>
+    </section>
 
+    <section id="education" class="section alt-bg">
+      <div class="container">
+        <h2>Educational Resources</h2>
+        <div class="grid">
+          <article class="card">
+            <h3>Student Leadership Toolkit</h3>
+            <p>Guides students on how to take leadership roles and contribute to the community with practical tips and templates.</p>
+            <p><a class="card-link" href="#">Open toolkit</a></p>
+          </article>
+
+          <article class="card">
+            <h3>Community Engagement Guide</h3>
+            <p>Strategies for getting involved in local initiatives, organizing events, and recruiting volunteers.</p>
+            <p><a class="card-link" href="#">Read guide</a></p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="container">
+        <h2>Events & Opportunities</h2>
+        <ul class="events-list">
+          <li><strong>Community Volunteer Day</strong> — A city-wide volunteer event open to students and families.</li>
+          <li><strong>Youth Leadership Workshop</strong> — Learn leadership and teamwork skills through hands-on activities.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" class="section footer-cta">
+      <div class="container">
+        <h2>Get in touch</h2>
+        <p>If you have events or resources to share, email the webmaster or submit via the form on the full site.</p>
+        <p>Email: <a href="mailto:webmaster@example.com">webmaster@example.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Community Hub — Created by TSA Webmaster</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small script for mobile nav toggle + year
+    (function () {
+      const button = document.getElementById('nav-toggle');
+      const nav = document.getElementById('main-nav');
+      button.addEventListener('click', function () {
+        const expanded = this.getAttribute('aria-expanded') === 'true' || false;
+        this.setAttribute('aria-expanded', String(!expanded));
+        nav.classList.toggle('open');
+      });
+
+      // Insert current year in footer
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
 </body>
 </html>
 
